@@ -24,7 +24,7 @@ export class User {
   @Prop({ required: true })
   almaMater: string;
 
-  @Prop({ enum: Role, default: Role.ADMIN })
+  @Prop({ enum: Role, default: Role.USER })
   role: Role;
 
   @Prop({ type: Boolean, default: false })
