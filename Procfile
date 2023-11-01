@@ -1,1 +1,1 @@
-worker: npx nest start
+worker: node dist/main
