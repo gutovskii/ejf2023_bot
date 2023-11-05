@@ -2,7 +2,7 @@ import { timetableToText } from './timetable.utils';
 
 export interface TimetableEvent {
   name: string;
-  description: string;
+  description?: string;
   author: string;
   dateTerms: string;
 }
@@ -12,30 +12,61 @@ export type TimetableList = Record<'firstDay' | 'secondDay', TimetableEvent[]>;
 export const timetableList: TimetableList = {
   firstDay: [
     {
-      name: 'Event 1 Day 1',
-      description: 'Very interesting event',
-      author: 'SoftServe',
-      dateTerms: '03:03-03:42',
+      name: 'Виступ на сцені Aviar',
+      author: 'Aviar',
+      dateTerms: '10:30-11:00',
     },
     {
-      name: 'Event 2 Day 1',
-      description: 'Very interesting event',
-      author: 'SoftServe',
-      dateTerms: '03:03-03:42',
+      name: 'Воркшоп ОККО',
+      author: 'ОККО',
+      dateTerms: '11:00-11:45',
+    },
+    {
+      name: 'Обід',
+      author: 'Організатори',
+      dateTerms: '12:45-13:45',
+    },
+    {
+      name: 'Воркшоп Aviar',
+      author: 'Aviar',
+      dateTerms: '13:45-14:30',
+    },
+    {
+      name: 'Лекція пана Харитонова',
+      author: 'Пан Харитонов',
+      dateTerms: '14:30-15:30',
+    },
+    {
+      name: 'Закриття першого дня',
+      author: 'Організатори',
+      dateTerms: '17:00',
     },
   ],
   secondDay: [
     {
-      name: 'Event 1 Day 2',
-      description: 'Very interesting event',
-      author: 'SoftServe',
-      dateTerms: '03:03-03:42',
+      name: 'Відкриття',
+      author: 'Організатори',
+      dateTerms: '09:00-10:00',
     },
     {
-      name: 'Event 2 Day 2',
-      description: 'Very interesting event',
-      author: 'SoftServe',
-      dateTerms: '03:03-03:42',
+      name: 'Воркшоп Binance',
+      author: 'Binance',
+      dateTerms: '11:00-12:00',
+    },
+    {
+      name: 'Обід',
+      author: 'Організатори',
+      dateTerms: '12:50-13:50',
+    },
+    {
+      name: 'Quest Case Study',
+      author: 'Організатори',
+      dateTerms: '14:00-16:30',
+    },
+    {
+      name: 'Закриття другого дня',
+      author: 'Організатори',
+      dateTerms: '17:00',
     },
   ],
 };
