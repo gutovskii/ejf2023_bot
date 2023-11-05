@@ -1,8 +1,10 @@
 export const aboutUsConfig = {
   whatIsEJF:
     "Уже впродовж 15 років проєкт допомагає молоді об'єднувати можливості з їхніми навичками. Це універсальний та унікальний кар’єрний досвід для студентів. Подія проходитиме у Львівській політехніці протягом 2 днів.\n\nНа проєкті ти зануришся в тренінги від передових компаній України, дізнаєшся про актуальні проблеми молоді на ринку праці, визначиш план дій для пошуку роботи та познайомишся з представниками провідних компаній у неформальній атмосфері.\n\nІЯК — це можливість перемогти свої страхи над успіхом, тож не проґав цей шанс!",
-  companiesAtEJF: 'Comming soon...',
+  companiesAtEJF:
+    '✨ OKKO\n✨ AVR-development\n✨ InfoPulse\n✨ IT Step Academy\n✨ Keel Solution\n✨ Leobit\n✨ OTAKOYI\n✨ SiTime\n✨ SoftServe\n✨ Sombra\n✨ TeamVoy\n✨ TSUKAT Studio',
   whoAreBEST:
     'BEST (Board of European Students of Technology), міжнародна молодіжна громадська організація, ціллю якої є розвиток студентів.',
-  otherBESTProjects: 'BEC - afsd\n\n, Hackath0n, BCI, BTW',
+  otherBESTProjects:
+    'BEC — інженерні змагання\nBCI — тиждень безкоштовних візитів у топові компанії Львова\nHackathon — IT змагання\nBTW — тиждень безкоштовних тренінгів',
 };
