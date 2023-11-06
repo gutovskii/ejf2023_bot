@@ -1,4 +1,4 @@
-import { Ctx, Message, Wizard, WizardStep } from 'nestjs-telegraf';
+import { Ctx, Hears, Message, Wizard, WizardStep } from 'nestjs-telegraf';
 import { MainWizardContext } from 'src/common/types';
 import { Markup } from 'telegraf';
 import { ADMIN_SCENE } from '../admin.scene';
@@ -65,5 +65,10 @@ export class BroadcastMessageWizard {
       ctx.scene.enter(ADMIN_SCENE);
       return;
     }
+  }
+
+  @Hears('Назад ↩️')
+  goBack(@Ctx() ctx: BroadcastMessageWizardContext) {
+    ctx.scene.enter(ADMIN_SCENE);
   }
 }
