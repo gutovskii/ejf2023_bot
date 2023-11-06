@@ -6,5 +6,5 @@ export const aboutUsConfig = {
   whoAreBEST:
     'BEST (Board of European Students of Technology), міжнародна молодіжна громадська організація, ціллю якої є розвиток студентів.',
   otherBESTProjects:
-    'BEC — інженерні змагання\nBCI — тиждень безкоштовних візитів у топові компанії Львова\nHBEST::HACKath0n — IT змагання\nBTW — тиждень безкоштовних тренінгів',
+    'BEC — інженерні змагання\nBCI — тиждень безкоштовних візитів у топові компанії Львова\nBEST::HACKath0n — IT змагання\nBTW — тиждень безкоштовних тренінгів',
 };
