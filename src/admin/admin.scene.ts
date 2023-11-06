@@ -33,7 +33,7 @@ export class AdminScene {
           ...Object.values(AdminAction).map((actionName) =>
             Markup.button.text(actionName),
           ),
-          Markup.button.text('Назад'),
+          Markup.button.text('Назад ↩️'),
         ],
         { columns: 2 },
       ).resize(true),
@@ -75,7 +75,7 @@ export class AdminScene {
     return ctx.scene.enter(SHOW_BANNED_WIZARD);
   }
 
-  @Hears('Назад')
+  @Hears('Назад ↩️')
   goBack(@Ctx() ctx: MainSceneContext) {
     return ctx.scene.enter(MAIN_SCENE);
   }
