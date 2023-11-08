@@ -44,7 +44,7 @@ export const fillQuestionnaireWizardQuiz: WizardQuiz = {
     reply: 'Хорош',
     errorMessage: 'Опис має бути від 100 до 300 символів та англійською',
     validationSchema: Joi.string().regex(
-      /^[a-zA-Z\,\.\-\—\'\`\"\;\#\@\!\(\)\$\s0-9]{100,300}$/,
+      /^[a-zA-Z\,\.\-\—\'\`\+\%\$\№\"\;\#\@\!\(\)\$\s0-9]{100,300}$/,
     ),
   },
   5: {
