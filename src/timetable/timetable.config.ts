@@ -12,7 +12,7 @@ export type TimetableList = Record<'firstDay' | 'secondDay', TimetableEvent[]>;
 export const timetableList: TimetableList = {
   firstDay: [
     {
-      name: 'Виступ на сцені Aviar',
+      name: 'Виступ на сцені AVR Development',
       author: 'Aviar',
       dateTerms: '10:30-11:00',
     },
@@ -27,7 +27,7 @@ export const timetableList: TimetableList = {
       dateTerms: '12:45-13:45',
     },
     {
-      name: 'Воркшоп Aviar',
+      name: 'Воркшоп AVR Development',
       author: 'Aviar',
       dateTerms: '13:45-14:30',
     },
