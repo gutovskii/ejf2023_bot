@@ -12,8 +12,13 @@ export type TimetableList = Record<'firstDay' | 'secondDay', TimetableEvent[]>;
 export const timetableList: TimetableList = {
   firstDay: [
     {
+      name: 'Відкриття',
+      author: 'Організатори',
+      dateTerms: '10:00-10:30',
+    },
+    {
       name: 'Виступ на сцені AVR Development',
-      author: 'Aviar',
+      author: 'AVR Development',
       dateTerms: '10:30-11:00',
     },
     {
@@ -28,16 +33,21 @@ export const timetableList: TimetableList = {
     },
     {
       name: 'Воркшоп AVR Development',
-      author: 'Aviar',
+      author: 'AVR Development',
       dateTerms: '13:45-14:30',
     },
     {
-      name: 'Лекція пана Харитонова',
-      author: 'Пан Харитонов',
+      name: 'Лекція "IT ринок України 2024: чого очікувати?"',
+      author: 'Сергій Харитонов',
       dateTerms: '14:30-15:30',
     },
     {
-      name: 'Закриття першого дня',
+      name: 'Лекція "Цінність навичок проєктного менеджменту в усіх професіях"',
+      author: 'Володимир Салига',
+      dateTerms: '15:45-16:45',
+    },
+    {
+      name: 'Закриття',
       author: 'Організатори',
       dateTerms: '17:00',
     },
@@ -46,7 +56,7 @@ export const timetableList: TimetableList = {
     {
       name: 'Відкриття',
       author: 'Організатори',
-      dateTerms: '09:00-10:00',
+      dateTerms: '10:00-10:30',
     },
     {
       name: 'Воркшоп Binance',
@@ -54,17 +64,27 @@ export const timetableList: TimetableList = {
       dateTerms: '11:00-12:00',
     },
     {
+      name: 'Лекція',
+      author: 'Comming soon',
+      dateTerms: '12:00-12:50',
+    },
+    {
       name: 'Обід',
       author: 'Організатори',
       dateTerms: '12:50-13:50',
     },
     {
-      name: 'Quest Case Study',
-      author: 'Організатори',
-      dateTerms: '14:00-16:30',
+      name: 'Виступ на сцені ОККО',
+      author: 'OKKO',
+      dateTerms: '13:50-14:20',
     },
     {
-      name: 'Закриття другого дня',
+      name: 'Квест Case Study',
+      author: 'Організатори',
+      dateTerms: '14:20-16:40',
+    },
+    {
+      name: 'Закриття',
       author: 'Організатори',
       dateTerms: '17:00',
     },

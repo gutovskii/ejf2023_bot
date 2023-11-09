@@ -41,7 +41,7 @@ export class ViewQuestionnairesScene {
   ) {
     const pagination = await PaginationMessage.build({
       bot: this.bot,
-      itemPerPage: 1,
+      itemPerPage: 3,
       model: this.questionnaireModel,
       format: (cv) => questionnaireToText(cv),
       modelFilter: questionnaireSearchFilterQuery(search),
