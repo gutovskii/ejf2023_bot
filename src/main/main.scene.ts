@@ -13,6 +13,7 @@ import { TIMETABLE_SCENE } from 'src/timetable/timetable.scene';
 import { UPLOAD_QUESTIONNAIRE_SCENE } from 'src/upload-questionnaire/upload-questionnaire.scene';
 import { VACANCIES_SCENE } from 'src/vacancies/vacancies.scene';
 import { VIEW_QUESTIONNAIRES_SCENE } from 'src/view-questionnaires/view-questionnaires.scene';
+import { ZSU_FUNDING_SCENE } from 'src/zsu-funding/zsu-funding.scene';
 import { Markup } from 'telegraf';
 import { Action, printActionButtons } from '../common/accesses';
 import { MainSceneContext } from '../common/types';
@@ -72,6 +73,12 @@ export class MainScene {
   @AllowedRoles(Role.PARTNER)
   async viewQuestionnaires(@Ctx() ctx: MainSceneContext) {
     return ctx.scene.enter(VIEW_QUESTIONNAIRES_SCENE);
+  }
+
+  @Hears(Action.ZSU_FUNDING)
+  @AllowedRoles(Role.USER, Role.PARTNER)
+  async ZSUFunding(@Ctx() ctx: MainSceneContext) {
+    return ctx.scene.enter(ZSU_FUNDING_SCENE);
   }
 
   @Hears(Action.ABOUT_US)

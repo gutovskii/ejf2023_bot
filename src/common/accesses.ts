@@ -8,6 +8,7 @@ export enum Action {
   VIEW_QUESTIONNAIRES = 'CV студентів 👀',
   UPLOAD_QUESTIONNAIRE = 'Завантажити CV 🧾',
   ABOUT_US = 'Про нас 👥',
+  ZSU_FUNDING = 'Збір на ЗСУ 🫡💪❤️‍🔥',
   ENTER_ADMIN_PANEL = 'Адмін панель 😎',
 }
 
@@ -16,13 +17,16 @@ export const usageAction = {
     Action.VIEW_TIMETABLE,
     Action.VIEW_VACANCIES,
     Action.UPLOAD_QUESTIONNAIRE,
+    Action.QUEST_CASE_STUDY,
+    Action.ZSU_FUNDING,
     Action.ABOUT_US,
   ],
   [Role.PARTNER]: [
     Action.VIEW_TIMETABLE,
     Action.VIEW_VACANCIES,
-    Action.QUEST_CASE_STUDY,
+    // Action.QUEST_CASE_STUDY,
     Action.VIEW_QUESTIONNAIRES,
+    Action.ZSU_FUNDING,
     Action.ABOUT_US,
   ],
   [Role.ADMIN]: Object.values(Action),

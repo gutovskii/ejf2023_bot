@@ -16,6 +16,7 @@ import { TimetableModule } from './timetable/timetable.module';
 import { UploadQuestionnaireModule } from './upload-questionnaire/upload-questionnaire.module';
 import { VacanciesModule } from './vacancies/vacancies.module';
 import { ViewQuestionnairesModule } from './view-questionnaires/view-questionnaires.module';
+import { ZSUFundingModule } from './zsu-funding/zsu-funding.module';
 
 @Module({
   imports: [
@@ -65,8 +66,9 @@ import { ViewQuestionnairesModule } from './view-questionnaires/view-questionnai
     UploadQuestionnaireModule,
     ViewQuestionnairesModule,
     QuestCaseStudyModule,
-    AwsModule,
+    ZSUFundingModule,
     AboutUsModule,
+    AwsModule,
   ],
   providers: [AppUpdate],
 })
