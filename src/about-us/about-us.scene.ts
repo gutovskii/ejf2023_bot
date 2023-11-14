@@ -16,6 +16,7 @@ export class AboutUsScene {
         [
           Markup.button.text('Що таке ІЯК?'),
           Markup.button.text('Компанії на ІЯКу'),
+          Markup.button.text('Хто спікери?'),
           Markup.button.text('Хто організатори?'),
           Markup.button.text('Інші проєкти BEST Lviv'),
           Markup.button.text('Назад ↩️'),
@@ -33,6 +34,13 @@ export class AboutUsScene {
   @Hears('Компанії на ІЯКу')
   async companiesAtEJF(@Ctx() ctx: MainSceneContext) {
     await ctx.reply(aboutUsConfig.companiesAtEJF);
+  }
+
+  @Hears('Хто спікери?')
+  async whoAreSpeakers(@Ctx() ctx: MainSceneContext) {
+    await ctx.reply(aboutUsConfig.whoAreSpeakers, {
+      parse_mode: 'HTML',
+    });
   }
 
   @Hears('Хто організатори?')
